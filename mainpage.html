@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+{
+  background-image: linear-gradient(to left bottom, #18283b, #1a2d44, #1b324d, #1d3756, #1f3c5f, #234267, #26476e, #2a4d76, #31547f, #375c87, #3e6390, #446b99);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	overflow-y: hidden; /* Hide vertical scrollbar */
+	overflow-x: hidden;
+}
+
+.card {
+	 position: relative;
+	 width: 565px;
+	 height: 800px;
+	 border: 10px solid #6188b8;
+	 margin: 60px auto 0 auto;
+	 box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+
+background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+	 background-color: #e6f0e6;
+}
+ .card .text-container {
+	 width: 80%;
+	 height: 80%;
+	 margin: auto;
+}
+ .strikethrough {
+	 text-decoration: line-through;
+}
+ .card .text-container #head {
+	 font-family: 'Nobile', sans-serif;
+	 font-size: 1.5em;
+	 margin: 60px auto 60px auto;
+	 text-align: center;
+}
+ .card p {
+	 font-size: 1.1em;
+	 line-height: 1.4;
+	 font-family: 'Nobile';
+	 color: #331717;
+	 font-style: italic;
+	 text-align: center;
+	 margin: 30px auto 0px auto;
+	 text-align: justify;
+	 text-justify: inter-word;
+}
+ .card .front {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 margin: -10px 0px 0px -10px;
+	 border: 10px solid #6188b8;
+	 backface-visibility: hidden;
+	 background-color: #6188b8;
+	/* background-image: url($cover-image);
+	 */
+	 background-size: contain;
+	 transform-style: preserve-3d;
+	 transform-origin: 0% 50%;
+	 transform: perspective(800px) rotateY(0deg);
+	 transition: all 0.8s ease-in-out;
+}
+ .card:hover .front {
+	 transform: perspective(800px) rotateY(-170deg);
+	 background-color: #41718d;
+}
+ .card:hover .back {
+	 transform: perspective(800px) rotateY(-170deg);
+	 box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+	 background-color: #d2dcd2;
+}
+ .card .back {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 border: 10px solid #6188b8;
+	 margin: -10px 0px 0px -10px;
+	 backface-visibility: visible;
+	 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
+	 transform-style: preserve-3d;
+	 transform-origin: 0% 50%;
+	 transform: perspective(800px) rotateY(0deg);
+	 transition: all 0.8s ease-in-out;
+	 background-color: #e6f0e6;
+	 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.imgset
+{
+  position: relative;
+  z-index: 1;
+  margin-bottom: -215px;
+}
+.imgset img
+{
+    box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+        <div class="card">
+          <div class="back"></div>
+          <div class="front">
+            <div class="imgset">
+                 <img width="100%" src="/2500.jpg">
+               </div>
+          </div>
+          <div class="text-container">
+            <h6 id="head">A Big Thank You for Your Guidance!</h6>
+            <p>I would like to extend my deepest gratitude 🙏 to you for the amazing English writing course ✍️ that you led. Throughout the entire journey, your unique approach made a huge difference. Each lesson was packed with valuable information 🧠, but what stood out the most was how fun and engaging it was 🎉. You didn’t just teach us the technical aspects of writing, but you also inspired us to express our creativity 🎨 and think critically. Your sense of humor 😄 and positive energy 🌟 kept the atmosphere light, making learning something to look forward to every day 📅. You created an environment where we felt comfortable to ask questions 🤔 and explore new ideas 💡. I can honestly say that I’ve gained so much, not just in terms of knowledge, but also confidence in my writing 🖋️. Thank you for all your hard work, dedication, and the passion you brought to every class. I’ll carry the lessons I learned with me for a long time to come! 😊</p>
+          </div>
+        </div>
+</body>
+</html>
